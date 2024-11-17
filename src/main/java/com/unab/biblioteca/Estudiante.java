@@ -11,6 +11,11 @@ package com.unab.biblioteca;
 public class Estudiante extends Usuario{
     private String carrera;
 
+    public Estudiante(String rut, String nombre, String genero, String carrera) {
+        super(rut, nombre, genero);   
+        setCarrera(carrera);
+        
+    }
     /**
      * @return the carrera
      */

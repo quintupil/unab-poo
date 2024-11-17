@@ -14,6 +14,11 @@ public abstract class Usuario implements InterfaceUsuario{
     private String nombre;
     private String genero;
 
+    public Usuario(String rut, String nombre, String genero) {
+        setRut(rut);
+        setNombre(nombre);
+        setGenero(genero);
+    }
     
     /**
      * Se valida el rut antes de setear

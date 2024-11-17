@@ -13,12 +13,7 @@ public class ProyectBiblioteca {
     public static void main(String[] args) {
         System.out.println("Sistema Biblioteca Bienvenido!!!");
         
-        Docente userDocente = new Docente();
-        userDocente.setNombre("Carlos García");
-        userDocente.setRut("14.120.095-K");
-        userDocente.setGenero("FM");
-        userDocente.setMagister(true);
-        userDocente.setDoctor(true);
+        Docente userDocente = new Docente("55.555.555-5", "Carlos García", "M", true, true, "Informatica");
        
         System.out.println("Docente instanciado con exito!!!!");
         System.out.println(userDocente.toString());

@@ -14,10 +14,11 @@ public class Docente extends Usuario{
     private boolean doctor;
     
     
-    public Docente() {
-        setMagister(false);
-        setDoctor(false);
-        setProfesion("");
+    public Docente(String rut, String nombre, String genero, boolean isMagister, boolean isDoctor, String profesion) {
+        super(rut, nombre, genero);
+        setMagister(isMagister);
+        setDoctor(isDoctor);
+        setProfesion(profesion);
     }
     
     /**
